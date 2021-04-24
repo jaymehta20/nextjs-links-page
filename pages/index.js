@@ -1,65 +1,144 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <main>
+      <div className="container">
+        <div className="info-container">
+          <div className="background"></div>
+          <div className="profile">
+            <div className="profile-picture">
+              <img src="images/logo-white.svg" />
+            </div>
+            <div className="profile-details">
+              <h1>
+                <strong>CODEGRAIN</strong>
+              </h1>
+              <strong>Shared Resources</strong>
+            </div>
+          </div>
+          <h2>Cool stuff</h2>
+          <div className="link">
+            <a href="design-tools.html">
+              <div className="left">
+                <img src="images/blog-6-cover.jpg" style={{ width: "6rem" }} />
+              </div>
+              <div className="right">
+                <h3>4 less known HTML tags</h3>
+              </div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="free-ux-courses.html">
+              <div className="left">
+                <img src="images/blog-5-cover.jpg" style={{ width: "6rem" }} />
+              </div>
+              <div className="right">
+                <h3>10 key takeaways from show your work</h3>
+              </div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="job-boards.html">
+              <div className="left">
+                <img src="images/blog-4-cover.jpg" style={{ width: "6rem" }} />
+              </div>
+              <div className="right">
+                <h3>Open Source Apps for Windows, We use at Codegrain</h3>
+              </div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="case-studies-template.html">
+              <div className="left">
+                <img src="images/blog-3-cover.jpg" style={{ width: "6rem" }} />
+              </div>
+              <div className="right">
+                <h3>Open Source Apps for Mac OS, We use at Codegrain</h3>
+              </div>
+            </a>
+          </div>
+          <div className="link">
+            <a href="user-stories-template.html">
+              <div className="left">
+                <img src="images/blog-2-cover.jpg" style={{ width: "6rem" }} />
+              </div>
+              <div className="right">
+                <h3>
+                  Master frost gradient, Create frost gradients with ease.
+                </h3>
+              </div>
+            </a>
+          </div>
+          <h2 style={{ paddingTop: "24px" }}>Profile &amp; Social</h2>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <div className="social-link">
+            <a href="https://www.instagram.com/codegra.in/" target="_blank">
+              <div className="top">
+                <img src="images/og-social.jpg" />
+              </div>
+              <div className="bottom">
+                <h3>Instagram</h3>
+                <p>@codegra.in</p>
+              </div>
+            </a>
+          </div>
+          <div className="social-link">
+            <a href="https://www.behance.net/CodeGrain" target="_blank">
+              <div className="top">
+                <img src="images/og-social.jpg" />
+              </div>
+              <div className="bottom">
+                <h3>Behance</h3>
+                <p>@CodeGrain</p>
+              </div>
+            </a>
+          </div>
+          <div className="social-link">
+            <a
+              href="https://www.youtube.com/channel/UCPKsb4U7x_4Ws-RsKQThVAA"
+              target="_blank"
+            >
+              <div className="top">
+                <img src="images/og-social.jpg" />
+              </div>
+              <div className="bottom">
+                <h3>Youtube</h3>
+                <p>@Codegrain</p>
+              </div>
+            </a>
+          </div>
+          <div className="social-link">
+            <a href="https://twitter.com/codegrain" target="_blank">
+              <div className="top">
+                <img src="images/og-social.jpg" />
+              </div>
+              <div className="bottom">
+                <h3>Twitter</h3>
+                <p>@Codegrain</p>
+              </div>
+            </a>
+          </div>
+          <div className="social-link">
+            <a href="mailto:codegrain@gmail.com" target="_blank">
+              <div className="top">
+                <img src="images/og-social.jpg" />
+              </div>
+              <div className="bottom">
+                <h3>Let&rsquo;s connect via Mail</h3>
+                <p>codegrain@gmail.com</p>
+              </div>
+            </a>
+          </div>
+          <div className="footer">
+            <strong>
+              <p>&copy;2021 Codegrain</p>
+            </strong>
+          </div>
         </div>
-      </main>
+      </div>
+    </main>
+  );
+};
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+export default Home;
