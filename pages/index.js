@@ -13,7 +13,9 @@ const Home = () => {
               <div className="background"></div>
               <div className="profile">
                 <div className="profile-picture">
-                  <img className="head-logo" />
+                  <a href="https://codegra.in">
+                    <img className="head-logo" />
+                  </a>
                 </div>
                 <div className="profile-details">
                   <h1>Shared Resources</h1>
@@ -90,7 +92,7 @@ const Home = () => {
                   </a>
                 </div>
               </div>
-              <h2 style={{paddingTop: "24px"}}>Profile &amp; Social</h2>
+              <h2 style={{ paddingTop: "24px" }}>Profile &amp; Social</h2>
               <div className="links-container">
                 <div className="social-link">
                   <a
