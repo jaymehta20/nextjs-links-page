@@ -2,6 +2,10 @@ import Head from "next/head";
 
 const Home = () => {
   return (
+    <>
+    <Head>
+      <title>Links | Codegrain</title>
+    </Head>
     <main>
       <div className="container">
         <div className="info-container">
@@ -138,6 +142,7 @@ const Home = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 
