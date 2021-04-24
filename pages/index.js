@@ -24,7 +24,7 @@ const Home = () => {
               <h2>Cool stuff</h2>
               <div className="links-container">
                 <div className="link">
-                  <a href="design-tools.html">
+                  <a href="https://blog.codegra.in/blog/4-less-known-html-tags">
                     <div className="left">
                       <img
                         src="images/blog-6-cover.jpg"
@@ -37,7 +37,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="link">
-                  <a href="free-ux-courses.html">
+                  <a href="https://blog.codegra.in/blog/10-key-takeaways-from-show-your-work">
                     <div className="left">
                       <img
                         src="images/blog-5-cover.jpg"
@@ -51,7 +51,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="link">
-                  <a href="job-boards.html">
+                  <a href="https://blog.codegra.in/blog/open-source-apps-for-windows">
                     <div className="left">
                       <img
                         src="images/blog-4-cover.jpg"
@@ -64,7 +64,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="link">
-                  <a href="case-studies-template.html">
+                  <a href="https://blog.codegra.in/blog/open-source-apps-for-mac-os">
                     <div className="left">
                       <img
                         src="images/blog-3-cover.jpg"
@@ -77,7 +77,7 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="link">
-                  <a href="user-stories-template.html">
+                  <a href="https://blog.codegra.in/blog/master-frost-gradients">
                     <div className="left">
                       <img
                         src="images/blog-2-cover.jpg"
@@ -93,15 +93,12 @@ const Home = () => {
                 </div>
               </div>
               <h2 style={{ paddingTop: "24px" }}>Profile &amp; Social</h2>
-              <div className="links-container">
+              <div className="links-container grids">
                 <div className="social-link">
                   <a
                     href="https://www.instagram.com/codegra.in/"
                     target="_blank"
                   >
-                    <div className="top">
-                      <img src="images/og-social.jpg" />
-                    </div>
                     <div className="bottom">
                       <h3>Instagram</h3>
                       <p>@codegra.in</p>
@@ -110,9 +107,6 @@ const Home = () => {
                 </div>
                 <div className="social-link">
                   <a href="https://www.behance.net/CodeGrain" target="_blank">
-                    <div className="top">
-                      <img src="images/og-social.jpg" />
-                    </div>
                     <div className="bottom">
                       <h3>Behance</h3>
                       <p>@CodeGrain</p>
@@ -124,9 +118,6 @@ const Home = () => {
                     href="https://www.youtube.com/channel/UCPKsb4U7x_4Ws-RsKQThVAA"
                     target="_blank"
                   >
-                    <div className="top">
-                      <img src="images/og-social.jpg" />
-                    </div>
                     <div className="bottom">
                       <h3>Youtube</h3>
                       <p>@Codegrain</p>
@@ -135,26 +126,20 @@ const Home = () => {
                 </div>
                 <div className="social-link">
                   <a href="https://twitter.com/codegrain" target="_blank">
-                    <div className="top">
-                      <img src="images/og-social.jpg" />
-                    </div>
                     <div className="bottom">
                       <h3>Twitter</h3>
                       <p>@Codegrain</p>
                     </div>
                   </a>
                 </div>
-                <div className="social-link">
-                  <a href="mailto:codegrain@gmail.com" target="_blank">
-                    <div className="top">
-                      <img src="images/og-social.jpg" />
-                    </div>
-                    <div className="bottom">
-                      <h3>Let&rsquo;s connect via Mail</h3>
-                      <p>codegrain@gmail.com</p>
-                    </div>
-                  </a>
-                </div>
+              </div>
+              <div className="social-link">
+                <a href="mailto:codegrain@gmail.com" target="_blank">
+                  <div className="bottom">
+                    <h3>Let&rsquo;s connect via Mail</h3>
+                    <p>codegrain@gmail.com</p>
+                  </div>
+                </a>
               </div>
               <div className="footer">
                 <strong>

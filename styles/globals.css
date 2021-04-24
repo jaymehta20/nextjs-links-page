@@ -140,7 +140,7 @@ a {
 .social-link {
   background-color: var(--clr-cultured);
   border-radius: 4px;
-  margin-bottom: 24px;
+
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -307,5 +307,18 @@ a {
   .social-link:hover,
   .link:hover {
     background-color: var(--clr-eerie-black);
+  }
+}
+.grids {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  
+}
+
+/* Portrait and Landscape */
+@media (min-width: 768px) {
+  .grids {
+    grid-template-columns: 1fr 1fr;
   }
 }
