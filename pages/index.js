@@ -36,7 +36,7 @@ const Home = () => {
               </a>
             </div>
             <div className="link">
-              <a href="https://blog.codegra.in/10-key-takeaways-from-show-your-work">
+              <a href="https://blog.codegra.in/blog/10-key-takeaways-from-show-your-work">
                 <div className="left">
                   <img
                     src="images/blog-5-cover.jpg"
