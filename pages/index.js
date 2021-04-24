@@ -143,7 +143,10 @@ const Home = () => {
               </div>
               <div className="footer">
                 <strong>
-                  <p>By Codegrain</p>
+                  <p>
+                    {" "}
+                    <a href="https://codegra.in/">By Codegrain</a>
+                  </p>
                 </strong>
               </div>
             </div>
