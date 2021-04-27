@@ -4,13 +4,8 @@
 :root {
   --clr-white: #fff;
   --clr-cultured: #f6f7f9;
-  --clr-light-grey: #cfcfcf;
-  --clr-onyx: #3a3b42;
-  --clr-eerie-black: #252422;
   --clr-rich-black: #0f0f0f;
   --clr-black: #000;
-
-  --clr-pistachio: #8cc972;
 }
 /* Resets */
 
@@ -22,10 +17,11 @@
 
 body {
   background: var(--clr-white);
-  color: var(--clr-eerie-black);
+  color: var(--clr-rich-black);
   font-family: "Inter", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
+  line-height: 1.6;
 }
 h1,
 h2,
@@ -34,6 +30,7 @@ h4,
 h5,
 h6 {
   font-family: "Work Sans", sans-serif;
+  line-height: 1.3;
 }
 
 h1 {
@@ -121,7 +118,7 @@ a {
 }
 
 .right p {
-  padding-top: 0.75rem;
+  padding-top: 0.5rem;
 }
 
 .social-link {
@@ -176,7 +173,7 @@ a {
   }
 
   .link {
-    background: var(--clr-eerie-black);
+    background: var(--clr-rich-black);
     color: car(--clr-cultured);
   }
 
@@ -186,7 +183,7 @@ a {
   }
 
   .social-link {
-    background-color: var(--clr-eerie-black);
+    background-color: var(--clr-rich-black);
   }
   .social-link:hover {
     box-shadow: rgba(0, 0, 0, 0) 0px 19px 43px;
