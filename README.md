@@ -21,4 +21,4 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 ## Dark Mode 🌚
 ![image](https://user-images.githubusercontent.com/23277339/116341784-2689db80-a7ff-11eb-9d12-1d47f0eb9107.png)
 
-## Feel free to rip it and call it our own 🚀
+## Feel free to rip it and call it your own 🚀
