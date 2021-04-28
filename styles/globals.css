@@ -89,14 +89,13 @@ main {
 
 .link {
   background-color: var(--clr-cultured);
+  color: var(--clr-rich-black);
   border-radius: 0.375rem;
   height: auto;
-  margin-bottom: 16px;
-  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 1rem;
 }
 .link:hover {
-  box-shadow: rgba(255, 255, 255, 0) 0px 19px 43px;
-  transform: translate3d(0px, -1.5px, 0px);
+  background-color: var(--clr-white);
 }
 
 .link a {
@@ -123,11 +122,11 @@ a {
 
 .social-link {
   background-color: var(--clr-cultured);
+  color: var(--clr-rich-black);
   border-radius: 0.375rem;
 }
 .social-link:hover {
-  box-shadow: rgba(255, 255, 255, 0) 0px 19px 43px;
-  transform: translate3d(0px, -1.5px, 0px);
+  background: var(--clr-white);
 }
 
 .top {
@@ -172,27 +171,27 @@ a {
     color: var(--clr-cultured);
   }
 
-  .link {
-    background: var(--clr-rich-black);
-    color: car(--clr-cultured);
-  }
-
   a {
     text-decoration: none;
     color: var(--clr-cultured);
   }
 
-  .social-link {
-    background-color: var(--clr-rich-black);
-  }
-  .social-link:hover {
-    box-shadow: rgba(0, 0, 0, 0) 0px 19px 43px;
-    transform: translate3d(0px, -1.5px, 0px);
+  .link {
+    background: var(--clr-rich-black);
+    color: car(--clr-cultured);
   }
 
   .link:hover {
-    box-shadow: rgba(0, 0, 0, 0) 0px 19px 43px;
-    transform: translate3d(0px, -1.5px, 0px);
+    background: var(--clr-black);
+  }
+
+  .social-link {
+    background-color: var(--clr-rich-black);
+    color: var(--clr-cultured);
+  }
+
+  .social-link:hover {
+    background: var(--clr-black);
   }
 }
 
