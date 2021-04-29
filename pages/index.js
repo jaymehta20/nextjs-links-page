@@ -1,6 +1,25 @@
+import { createClient } from "contentful";
 import Head from "next/head";
 import Image from "next/image";
-const Home = () => {
+import LinkCard from "../components/LinkCard";
+
+export async function getStaticProps() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+
+  const res = await client.getEntries({ content_type: "links" });
+
+  return {
+    props: {
+      links: res.items,
+    },
+    revalidate: 1,
+  };
+}
+
+const Home = ({ links }) => {
   return (
     <>
       <Head>
@@ -38,48 +57,9 @@ const Home = () => {
             </div>
             <h2>Cool stuff</h2>
             <div className="links-container link-grid">
-              <div className="link">
-                <a href="https://codegra.in/blog/blog-6" target="_blank">
-                  <div className="right">
-                    <h2>4 less known HTML tags</h2>
-                    <p>Pretty useful stuff!</p>
-                  </div>
-                </a>
-              </div>
-              <div className="link">
-                <a href="https://codegra.in/blog/blog-5" target="_blank">
-                  <div className="right">
-                    <h2>10 key takeaways from show your work</h2>
-                    <p>Austin Kleon is 🔥</p>
-                  </div>
-                </a>
-              </div>
-              <div className="link">
-                <a href="https://codegra.in/blog/blog-4" target="_blank">
-                  <div className="right">
-                    <h2>Open Source Apps for Windows, We use at Codegrain</h2>
-                    <p>We use at Codegrain</p>
-                  </div>
-                </a>
-              </div>
-              <div className="link">
-                <a href="https://codegra.in/blog/blog-3" target="_blank">
-                  <div className="right">
-                    <h2>Open Source Apps for Mac OS, We use at Codegrain</h2>
-                    <p>We use at Codegrain</p>
-                  </div>
-                </a>
-              </div>
-              <div className="link">
-                <a href="https://codegra.in/blog/blog-2" target="_blank">
-                  <div className="right">
-                    <h2>
-                      Master frost gradient, Create frost gradients with ease.
-                    </h2>
-                    <p>Create frost gradients with ease.</p>
-                  </div>
-                </a>
-              </div>
+              {links.map((link) => (
+                <LinkCard key={link.sys.id} link={link} />
+              ))}
             </div>
             <h2>Profile &amp; Social</h2>
             <div className="links-container grids">
