@@ -37,6 +37,7 @@ const Home = ({ links }) => {
                   height="150"
                   quality={100}
                   className="head-logo"
+                  placeholder="blur"
                 ></Image>
               </a>
             </div>
