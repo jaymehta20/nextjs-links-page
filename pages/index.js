@@ -2,6 +2,7 @@ import { createClient } from "contentful";
 import Head from "next/head";
 import Image from "next/image";
 import LinkCard from "../components/LinkCard";
+import Logo from "../public/images/logo.jpg";
 
 export async function getStaticProps() {
   const client = createClient({
@@ -32,7 +33,7 @@ const Home = ({ links }) => {
             <div className="profile-picture">
               <a href="https://codegra.in" target="_blank">
                 <Image
-                  src="/images/logo.jpg"
+                  src={Logo}
                   width="150"
                   height="150"
                   quality={100}
